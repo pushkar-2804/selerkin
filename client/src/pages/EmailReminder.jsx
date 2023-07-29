@@ -94,11 +94,14 @@ const EmailReminder = () => {
 
   const sendEmail = async (id, email, customerName, product) => {
     try {
-      const response = await axios.post("http://localhost:3000/api/emails/", {
-        email,
-        name: customerName,
-        product,
-      });
+      const response = await axios.post(
+        `${import.meta.env.VITE_API_URL}/api/emails`,
+        {
+          email,
+          name: customerName,
+          product,
+        }
+      );
       console.log(response);
       if (response.status === 200) {
         setData((prevData) =>
