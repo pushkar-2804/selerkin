@@ -17,3 +17,13 @@
     width: 100%;
 
 }
+.loaderWrapper{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background-color: #00223968;
+    z-index: 10;
+}
