@@ -2,8 +2,10 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const compression = require("compression");
 const app = express();
+const cors = require("cors");
 const port = 3000;
 
+app.use(cors());
 // Middleware to parse JSON data
 app.use(bodyParser.json());
 app.use(compression());

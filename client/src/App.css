@@ -1,0 +1,19 @@
+.app{
+    background-color: #F0F0F0;
+    padding: 0;
+    display: flex;
+}
+
+.heading{
+    background-color: #002239;
+    color: #F0F0F0;
+    border-radius: 10px;
+    padding: 20px;
+    height: max-content;
+    font-weight: 700;    
+}
+.wrapper{
+    margin-left: 20px;
+    width: 100%;
+
+}

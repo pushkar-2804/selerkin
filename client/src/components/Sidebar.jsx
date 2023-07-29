@@ -10,8 +10,13 @@ const Sidebar = () => {
   ];
   return (
     <div className="sidebar">
-      {menu.map((menuItem) => {
-        return <div className="sidebarElement">{menuItem}</div>;
+      <div className="sidebarIcon">Sellerkin</div>
+      {menu.map((menuItem, index) => {
+        return (
+          <div className="sidebarElement" key={index}>
+            {menuItem}
+          </div>
+        );
       })}
     </div>
   );
