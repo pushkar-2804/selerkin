@@ -15,6 +15,7 @@
 .sidebarElement {
     border-radius: 5px;
     padding: 10px;
+    cursor: pointer;
 }
 .sidebarElement:hover{
     background-color: #00435C;
